@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Favicon -->
+    <link href="img/favicon1.png" rel="icon">
+
+    <!-- Google Web Fonts --
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="photo1"></div>
+        <div class="ellipse">
+            <div class="logo">
+                <img src="/images/logo.png" alt="logo">
+            </div>
+            <div class="content">
+                <h1 class="text">ACHIEVE
+                    <br> YOUR DREAMS</br>
+                </h1>
+                <div class="description">
+                    <h1>Apply here, where dreams take flight. With <br>expert mentors, innovative curriculum, and <br>
+                        immersive experiences, we'll
+                        empower you <br> to achieve greatness and turn your <br> aspirations into reality.</h1>
+                </div>
+                <!-- Add the necessary CSS and JavaScript files (e.g., Bootstrap) here -->
+
+                <div class="button">
+                    <a href="#" class="apply-btn" onclick="openApplicationForm()">APPLY NOW</a>
+                </div>
+
+                <!-- Modal HTML for Application Form -->
+                <div id="applicationFormModal" class="modal">
+
+                    <div class="modal-content">
+
+                        <span class="close" style="font-size: 40px; margin-right:1460px;"
+                            onclick="closeApplicationForm()">&times;</span>
+
+                        <div class="container mt-5">
+
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <!-- Logo -->
+                                    <img src="/images/logo-black.png" alt="Logo"
+                                        style="width: 50%; height:90%; margin-left:200px;">
+                                </div>
+                                <div class="col-md-4 form-heading">
+                                    <p class="header1"
+                                        style="font-weight: 800; line-height: 23px; color: #0A2035; font-size: 33px; font-family: Mitr, Arial, sans-serif;">
+                                        Application Form
+                                    </p>
+                                    <p class="header2"
+                                        style="font-weight: 600; line-height: 20px; color: white; margin-top: 20px; font-family: Mitr, Arial, sans-serif;">
+                                    </p>
+                                </div>
+                            </div>
+
+                            <form method="post" id="form">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form">
+                                            <label for="firstName">First Name *</label>
+                                            <input style="font-weight: 600; color: rgba(0, 0, 0, 0.33);" type="text"
+                                                class="form-control" id="firstName" required>
+                                        </div>
+
+                                        <div class="form">
+                                            <label for="email">Email *</label>
+                                            <input style="font-weight: 600; color: rgba(0, 0, 0, 0.33);" type="email"
+                                                class="form-control" id="email" required>
+                                        </div>
+
+                                        <div class="form">
+                                            <label for="code">Code (number code) *</label>
+                                            <input type="text" class="form-control" id="code" required>
+                                        </div>
+                                        <div class="form">
+                                            <label for="universityType">University Type *</label>
+                                            <input type="text" class="form-control" id="universityType">
+                                        </div>
+                                        <div class="form">
+                                            <label for="englishLevel">Level of English Delivery Mode *</label>
+                                            <input type="text" class="form-control" id="englishLevel" required>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form">
+                                            <label for="lastName">Last Name *</label>
+                                            <input style="font-weight: 600; color: rgba(0, 0, 0, 0.33);" type="text"
+                                                class="form-control" id="lastName" required>
+                                        </div>
+
+                                        <div class="form">
+                                            <label for="programDegree">Program Degree *</label>
+                                            <input type="text" class="form-control" id="programDegree" required>
+                                        </div>
+                                        <div class="form">
+                                            <label for="number">Number *</label>
+                                            <input type="text" class="form-control" id="number" required>
+                                        </div>
+
+                                        <div class="form">
+                                            <label for="studyProgram">The study program you want *</label>
+                                            <input type="text" class="form-control" id="studyProgram">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="form">
+                                            <label for="diploma">Your diploma *</label>
+                                            <input type="file" class="form-control" id="diploma" required>
+                                        </div>
+                                        <div class="form">
+                                            <label for="passport">Your passport *</label>
+                                            <input type="file" class="form-control" id="passport" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="form">
+                                            <label for="transcript">Your transcript *</label>
+                                            <input type="file" class="form-control" id="transcript" required>
+                                        </div>
+                                        <div class="form">
+                                            <label for="otherDocuments">Other documents *</label>
+                                            <input type="file" class="form-control" id="otherDocuments" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col text-center" style="margin-bottom: 20px; ">
+                                        <button type="submit" class="btn btn-primary btn-lg ">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openApplicationForm() {
+                        const modal = document.getElementById('applicationFormModal');
+                        modal.style.display = 'block';
+
+                        // Prevent scrolling when the modal is open
+                        document.body.style.overflow = 'hidden';
+
+                        // Add event listener for "Escape" key
+                        document.addEventListener('keydown', handleEscapeKey);
+                    }
+
+                    function closeApplicationForm() {
+                        const modal = document.getElementById('applicationFormModal');
+                        modal.style.display = 'none';
+
+                        // Allow scrolling when the modal is closed
+                        document.body.style.overflow = 'auto';
+
+                        // Remove event listener for "Escape" key
+                        document.removeEventListener('keydown', handleEscapeKey);
+                    }
+
+                    function handleEscapeKey(event) {
+                        if (event.key === 'Escape') {
+                            closeApplicationForm();
+                        }
+                    }
+                </script>
+                <script src="https://apis.google.com/js/api.js"></script>
+                <script src="https://apis.google.com/js/api.js?onload=initClient"></script>
+
+                <script>
+                    let url = 'https://script.google.com/u/0/home/projects/1U4klVV8wm5-b3rNDGgl6kNrlCZus_Yhn5e_NZiVvhIfB3cMzzGqn1s23/edit';
+                    let form = document.querySelector('#form');
+                    form.addEventListener("submit", (e) => {
+                        let d = new FormData(form);
+                        fetch('https://script.google.com/macros/s/AKfycbztcV_TONENCJ42v3c1Lq4c1Bn05nOML13SvGVhBFMuWD4pkpNdNgMcIZf0A16XkaIU/exec', {
+                            method: "POST",
+                            body: d
+                        }).then((res) => res.text())
+                            .then((finalRes) => console.log(finalRes));
+                        e.preventDefault();
+                    });
+                </script>
+
+                <script>
+                    function initClient() {
+                        gapi.client.init({
+                            apiKey: 'AIzaSyBY-cp2dB4P7wZcPI7-VVFoQUoUjDjp4bs',
+                            clientId: '331155097596-ujg6av9l3mlg260b84m14dn7obsvl547.apps.googleusercontent.com',
+                            discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+                            scope: 'https://www.googleapis.com/auth/spreadsheets',
+                        }).then(function () {
+                            // Google Sheets API is ready for use.
+                            // You can add event listeners or perform other actions here.
+                        }).catch(function (error) {
+                            console.error('Error initializing Google Sheets API:', error);
+                        });
+                    }
+                </script>
+
+
+
+                <div class="d-flex justify-content-center pt-2 px-1 contact-buttons"
+                    style="margin-left: 220px; margin-top: -80px;">
+                    <a class="btn btn-sm btn-primary rounded-0 mx-1 ml-1"
+                        style="background-color: #27d268; height: 72px; width: 72px; color: white; display: flex; align-items: center; justify-content: center;"
+                        href="https://api.whatsapp.com/send/?phone=905540201005&text&type=phone_number&app_absent=0">
+                        <i class="fab fa-whatsapp fa-2x ml-0" style="font-size: 3rem;"></i>
+                    </a>
+                    <a class="btn btn-sm-square  mx-0 ml-0"
+                        style="color:white; margin-top:0px; background: #f09433; 
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ; width:72px; height:72px; display:flex; align-items:center; justify-content:center; "
+                        href="https://www.instagram.com/sapbyce/"><i class="fab fa-instagram fa-2x ml-0"
+                            style="font-size:3rem"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+    <div class="companies-list">
+        <div class="box">
+            <img src="/images/ranking.png" alt="logo">
+        </div>
+        <div class="box1">
+            <img src="/images/usa.png" alt="logo">
+        </div>
+        <div class="box3">
+            <img src="/images/logo-black.png" alt="logo">
+        </div>
+        <div class="box2">
+            <img src="/images/canada.png" alt="logo">
+        </div>
+        <div class="box">
+            <img src="/images/erasmus.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- <div class="ambassador1">
+        <div>
+            
+            <div class="sap"><img src="/images/SAP.png" alt="sap"></div>
+            <div class="video-container">
+                <video id="myVideo" src="/images/ted-video.mp4" poster="/images/poster-for-ambassador.png" controls></video>
+            </div>
+        </div>
+    </div>
+-->
+    <section class="custom-bg-color py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-white">
+                        <div class="text-white text-center">
+                            <h2 class="text-start  "
+                                style="font-size:44px; font-weight:700; margin-left:120px; margin-top:115px; font-family: Mitr , Arial, sans-serif; ">
+                                Become a Student in <br> Turkey</h2>
+                        </div>
+                        <p class="text-start"
+                            style="font-size:18px; margin-left:120px;font-weight:400; font-family:PolySans, sans-serif; line-height:24px;">
+                            Understand the latest AWS features used by data<br>engineers to design and build
+                            systems for collecting,<br> storing, and analyzing data at scale.</p>
+                    </div>
+                    <button onclick="window.location.href='http://sap.capitalempireco.com/#apply';"
+                        class="btn btn-primary"
+                        style="width: 200px; height: 60px; background-color: #bdea09; color: #0B0B0B; font-weight: 600; font-size: 20px; font-family: Mitr, Arial, sans-serif; margin-left: 120px; margin-top: 30px; cursor: pointer;">
+                        Enroll Now <i class="fas fa-arrow-right" style="margin-left: 10px; font-size: 1.2rem;"></i>
+                    </button>
+
+                    <button onclick="window.location.href='http://sap.capitalempireco.com/#apply';"
+                        class="btn btn-outline-light"
+                        style="margin-top: 30px; margin-left: 10px; width: 223px; height: 60px; border-color: white; color: white; background-color: transparent; font-family: Mitr, Arial, sans-serif; font-weight: 600; font-size: 19px; border-width: 3px; cursor: pointer;">
+                        Reach Out Now
+                    </button>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="background-image"></div>
+                        <div class="embed-responsive embed-responsive-16by9 video-container">
+                            <iframe class="embed-responsive-item"
+                                style="height:210px; width:400px; margin-left:-80px; margin-bottom:-100px; "
+                                src="https://www.youtube.com/embed/qLlMo-eOMD0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container-xxl py-5 mt-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+
+                <div class="container">
+                    <h1 class="mb-5 text-start"
+                        style="font-family: Mitr, Arial, sans-serif; font-weight:700; color:#0A2035; font-size:55px ; margin-bottom: 70px; padding-top:20px;">
+                        Our Ambassadors
+                    </h1>
+                </div>
+                <div class="rectangle123"></div>
+
+            </div>
+            <div class="row g-4 px-">
+                <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s"
+                    style="background-color: #243b5d; border: 3px solid white; ">
+                    <div class="team-item ">
+                        <!--first Ambasador-->
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center">
+                            <div class=" d-flex justify-content-center pt-2 px-1 " style="background-color: #243b5d;">
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px;"
+                                    href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2FSAP.StudyAbroadPlatform">
+                                    <img src="/images/only-logo.png" alt="" width="47" height="44"
+                                        style="display: flex; justify-content:center; align-items:center; margin-left:-6px; margin-top:1px;">
+                                </a>
+                                <a class="btn btn-sm-square btn-primary rounded-3 mx-2"
+                                    style="width: 140px; height:60px;line-height:normal;font-family: Mitr, Arial, sans-serif; line-height:17px; padding-top:19px; color:white; "
+                                    href="https://api.whatsapp.com/send/?phone=905540201005&text&type=phone_number&app_absent=0">
+                                    Chat with Lenaston
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px; "
+                                    href="https://www.instagram.com/reel/Ct1UQZwIsut/?igshid=MTc4MmM1YmI2Ng%3D%3D">
+                                    <i class="fab fa-instagram"
+                                        style="font-size: 2.5rem; display:flex; align-items:center; justify-content:center; margin-top:3px; color:white;"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="text-start" style="margin-left: 15px; margin-top:-110px;">
+
+                            <h5 class="mt-0"
+                                style="font-size: 35px; font-weight: 800; font-family: Roboto, sans-serif; color: white;">
+                                Lenaston.A</h5>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-size: 25px; line-height:24px;font-weight: 600;">Bachelor's
+                                <br>International Trade<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; ">Istanbul
+                                Medipol University<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400;">I
+                                come from: <br> France / Germany <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                    viewBox="0 0 30 30.000001" height="30" preserveAspectRatio="xMidYMid meet"
+                                    version="1.0">
+
+                                </svg>
+
+
+                            </small>
+                            <hr class="my-2" style="color:white">
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; margin-bottom:20px;  ">About
+                                me: <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus quo minima sint
+                                asperiores! Itaque autem neque distinctio <br><br></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Second Ambasador-->
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp pr-2 " data-wow-delay="0.1s"
+                    style="background-color: #243b5d;border: 3px solid white; ">
+                    <div class="team-item ">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center">
+                            <div class=" d-flex justify-content-center pt-2 px-1 " style="background-color: #243b5d;">
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px; "
+                                    href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2FSAP.StudyAbroadPlatform">
+                                    <img src="/images/only-logo.png" alt="" width="47" height="44"
+                                        style="display: flex; justify-content:center; align-items:center; margin-left:-6px; margin-top:1px;">
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2 rounded-3 "
+                                    style="width: 140px; height:60px; font-weight:500; font-size:17px;font-family: Mitr, Arial, sans-serif; line-height:17px; padding-top:19px; color:white;"
+                                    href="https://api.whatsapp.com/send/?phone=905540201005&text&type=phone_number&app_absent=0">
+                                    Chat with Prince
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2"
+                                    style="width: 60px; height:60px; color:white;"
+                                    href="https://www.instagram.com/sapbyce/">
+                                    <i class="fab fa-instagram" style="font-size: 2.5rem; margin-top:2px;"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="text-start" style="margin-left: 15px; margin-top:-110px;">
+
+                            <h5 class="mt-0"
+                                style="font-size: 35px; font-weight: 800; font-family: Roboto, sans-serif; color: white;">
+                                Prince.F</h5>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-size: 25px; line-height:24px;font-weight: 600;">Master's
+                                <br> Software Engineering<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; ">Ankara
+                                Ankara University<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400;">I
+                                come from:
+                                <br> Afganistan / Turkey <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                    viewBox="0 0 30 30.000001" height="30" preserveAspectRatio="xMidYMid meet"
+                                    version="1.0">
+
+                                </svg>
+
+
+                            </small>
+                            <hr class="my-2" style="color:white">
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; margin-bottom:20px;  ">About
+                                me: <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus quo minima sint
+                                asperiores!
+                                Itaque autem neque distinctio <br><br></small>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--third Ambasador-->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"
+                    style="background-color: #243b5d;border: 3px solid white; ">
+                    <div class="team-item ">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center">
+                            <div class=" d-flex justify-content-center pt-2 px-1 " style="background-color: #243b5d;">
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px; "
+                                    href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2FSAP.StudyAbroadPlatform">
+                                    <img src="/images/only-logo.png" alt="" width="47" height="44"
+                                        style="display: flex; justify-content:center; align-items:center; margin-left:-6px; margin-top:1px;">
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2 rounded-3 "
+                                    style="width: 140px; height:60px; font-weight:500; font-size:17px;font-family: Mitr, Arial, sans-serif; line-height:17px; padding-top:19px; color:white; "
+                                    href="https://api.whatsapp.com/send/?phone=905540201005&text&type=phone_number&app_absent=0">
+                                    Chat with Jewel
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px;"
+                                    href="https://www.instagram.com/sapbyce/">
+                                    <i class="fab fa-instagram"
+                                        style="font-size: 2.5rem; margin-top:2px; color:white;"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="text-start" style="margin-left: 15px; margin-top:-110px;">
+
+                            <h5 class="mt-0"
+                                style="font-size: 35px; font-weight: 800; font-family: Roboto, sans-serif; color: white;">
+                                Jewel.K</h5>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-size: 25px; line-height:24px;font-weight: 600;">Bachelor's
+                                <br> Artificial Intelligence<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; ">Ankara
+                                Medipol University<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400;">I
+                                come from:
+                                <br> Algeria / Algeria <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                    viewBox="0 0 30 30.000001" height="30" preserveAspectRatio="xMidYMid meet"
+                                    version="1.0">
+
+                                </svg>
+
+
+                            </small>
+                            <hr class="my-2" style="color:white">
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; margin-bottom:20px;  ">About
+                                me: <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus quo minima sint
+                                asperiores!
+                                Itaque autem neque distinctio <br><br></small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--fourth Ambasador-->
+                <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s"
+                    style="background-color: #243b5d;border: 3px solid white; ">
+                    <div class="team-item ">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center">
+                            <div class=" d-flex justify-content-center pt-2 px-1 " style="background-color: #243b5d;">
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px; "
+                                    href="https://www.facebook.com/checkpoint/828281030927956/?next=https%3A%2F%2Fwww.facebook.com%2FSAP.StudyAbroadPlatform">
+                                    <img src="/images/only-logo.png" alt="" width="47" height="44"
+                                        style="display: flex; justify-content:center; align-items:center; margin-left:-6px; margin-top:1px;">
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2 rounded-3 "
+                                    style="width: 140px; height:60px; font-weight:500; font-size:17px;font-family: Mitr, Arial, sans-serif; line-height:17px; padding-top:19px; color:white;"
+                                    href="https://api.whatsapp.com/send/?phone=905540201005&text&type=phone_number&app_absent=0">
+                                    Chat with Merve
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-2" style="width: 60px; height:60px;"
+                                    href="https://www.instagram.com/sapbyce/">
+                                    <i class="fab fa-instagram"
+                                        style="font-size: 2.5rem; margin-top:2px; color:white;"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="text-start" style="margin-left: 15px; margin-top:-110px;">
+
+                            <h5 class="mt-0"
+                                style="font-size: 35px; font-weight: 800; font-family: Roboto, sans-serif; color: white;">
+                                Merve.T</h5>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-size: 25px; line-height:24px;font-weight: 600;">Ph.D
+                                <br> Political Science<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; ">Ankara
+                                Medipol University<br></small>
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400;">I
+                                come from:
+                                <br> Algeria / Algeria <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify"
+                                    viewBox="0 0 30 30.000001" height="30" preserveAspectRatio="xMidYMid meet"
+                                    version="1.0">
+
+
+                                </svg>
+
+
+                            </small>
+                            <hr class="my-2" style="color:white">
+                            <small
+                                style="color: #06bbcc; font-family: Roboto, sans-serif;color: white; font-weight: 400; margin-bottom:20px;  ">About
+                                me: <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus quo minima sint
+                                asperiores!
+                                Itaque autem neque distinctio <br><br></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <div class="container-xxl py-5 mt-5 ">
+        <div class="container ">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5 text-start" style="font-weight: 900; font-size: 44px;">Our Services</h1>
+            </div>
+            <div class="rectangle123"></div>
+            <div class="row g-4" style="width: 100%; height:100%;">
+                <div class="col-lg-3 col-md-6 wow fadeInUp no-rounded flex-fill" data-wow-delay="0.1s">
+                    <div class="team-item bg-light ">
+                        <div class="overflow-hidden ">
+                            <img class=" no-rounded" src="images/photo1.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center no-rounded"
+                            style="margin-top: -140px;">
+
+                        </div>
+                        <div class="text-center p-4 flex-fill ">
+                            <h5 class="mb-0 text-start" style="font-weight:900;font-size: 26px;">Undergraduate and
+                                Graduate
+                                Programs</h5>
+                            <small class="text-start" style="margin-left:-9px;">+25 country and more than 3'200 <br>
+                                different programs</small>
+                        </div>
+                        <a href="https://sap.capitalempireco.com/#apply" class="btn btn-primary no-rounded btn-lg"
+                            style="margin-left:70px; margin-bottom:15px;font-family: Mitr, Arial, sans-serif; font-weight:600; font-size:18px;">APPLY
+                            NOW</a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp flex-fill" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="no-rounded" src="images/photo2.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center no-rounded"
+                            style="margin-top: -180px; margin-bottom: 49px">
+
+                        </div>
+                        <div class="text-center p-4 flex-fill">
+                            <h5 class="mb-0 " style="font-weight:900;font-size: 26px; margin-top:-10px;">Scholarships
+                                Programs <br></h5>
+                            <small>100's of Scholarships monthly, full and partial Scholarships</small>
+                        </div>
+                        <a href="https://sap.capitalempireco.com/#apply" class="btn btn-primary no-rounded btn-lg"
+                            style="margin-left:70px;margin-top:31px; margin-bottom:17px;font-family: Mitr, Arial, sans-serif; font-weight:600; font-size:18px;">APPLY
+                            NOW</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp flex-fill" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="no-rounded-corners" src="images/photo3.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -140px;">
+
+                        </div>
+                        <div class="text-center p-4 flex-fill">
+                            <h5 class="mb-0 " style="font-weight:800;font-size: 23px;">Student Visa & Job <br></h5>
+                            <small>Student Visa and Student Residence Permit</small>
+                        </div>
+                        <a href="https://sap.capitalempireco.com/#apply" class="btn btn-primary no-rounded btn-lg"
+                            style="margin-left:70px;margin-top:57px; margin-bottom:23px;font-family: Mitr, Arial, sans-serif; font-weight:600; font-size:18px;">APPLY
+                            NOW</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp flex-fill" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="no-rounded-corners" src="images/photo4.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -140px;">
+
+                        </div>
+                        <div class="text-center p-4 flex-fill">
+                            <h5 class="mb-0 flex-fill" style="font-weight:800;font-size: 23px;">Student Exchange and
+                                Erasmus <br></h5>
+                            <small>Erasmus, Student Exchange and Summer School</small>
+                        </div>
+                        <a href="https://sap.capitalempireco.com/#apply" class="btn btn-primary no-rounded btn-lg"
+                            style="margin-left:70px; margin-top:37px; margin-bottom:15px;font-family: Mitr, Arial, sans-serif; font-weight:600; font-size:18px;">APPLY
+                            NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+<div class="services">
+    <div class="h1-text2">
+        <h1>Our Services</h1>
+    </div>
+    <div class="services-rectangles">
+        <div class="rectangle1">
+            <div class="photo1">
+            <img src="/images/photo1.png" alt="Photo 2">
+            <p class="services-description1">Undergraduate and Graduate
+            Programs</p>
+            <p class="services-description-about1">Undergraduate & Graduate:These programs offer a broad education in a specific field of study which required courses and
+            electives to earn the degree which typically requires years of education.</p>
+            </div>
+        </div>
+        <div class="rectangle1">
+            <div class="photo1">
+            <img src="/images/photo2.png" alt="Photo 2">
+            <p class="services-description2">Scholarships Programs</p>
+            <p class="services-description-about2">Scholarship Programme: A programme to obtain financial assistance, support, and opportunities for students to pursue
+            their further education given by the institutions.</p>
+            </div>
+        </div>
+        <div class="rectangle1">
+            <div class="photo1">
+            <img src="/images/photo3.png" alt="Photo 2">
+        <p class="services-description3">Student Visa & Job</p>
+        <p class="services-description-about3">Student Visa & Job: A type of visa that allows students to travel to a foreign country for the purpose of pursuing
+        education or to receive work permission.</p>
+            </div>
+
+        </div>
+        <div class="rectangle1">
+            <div class="photo1">
+            <img src="/images/photo4.png" alt="Photo 2">
+            <p class="services-description4">Student Exchange and Erasmus</p>
+            <p class="services-description-about4">Student exchange and Erasmus: These programs are both initiatives that provide opportunities for students to study
+            abroad and experience different educational systems, cultures, and languages.
+</p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="button3">
+        <a href="#" class="apply-btn">APPLY NOW</a>
+    </div>
+    </div>
+-->
+
+    <!--
+    <div class="container-test"> 
+        <h1 class="h1-text-test">Testimonials</h1>
+    
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="images/photo1.png" alt="Testimonial 1">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam pretium elit at enim <br> placerat, sed
+                    aliquet magna eleifend. Duis efficitur venenatis mi vitae vulputate.</p>
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+            </div>
+    
+            <div class="testimonial">
+                <img src="images/photo2.png" alt="Testimonial 2">
+                <h2>Jane Smith</h2>
+                <p>Sed tristique justo augue, id gravida purus ullamcorper non. Nam gravida, est vitae <br>auctor auctor,
+                    dolor ante ultricies eros, ac efficitur nunc mi vitae justo.</p>
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+            </div>
+    
+            <div class="testimonial">
+                <img src="images/photo3.png" alt="Testimonial 3">
+                <h2>David Johnson</h2>
+                <p>Maecenas posuere auctor enim, eu sagittis nulla dignissim in. Curabitur sollicitudin<br> risus id
+                    hendrerit bibendum. Morbi vel lobortis ipsum, nec efficitur ligula.</p>
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+            </div>
+    
+            <div class="testimonial">
+                <img src="images/photo4.png" alt="Testimonial 4">
+                <h2>Emily Davis</h2>
+                <p>Quisque ac sem et sem scelerisque ullamcorper. Sed eget enim vitae sem pharetra <br>laoreet. Fusce
+                    euismod nibh lorem, in dignissim justo iaculis vitae.</p>
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+            </div>
+        </div>
+    </div>
+-->
+
+
+    <!--Testimonials-->
+
+    <div class="container-fluid py-5 mt-5" style="background-color: #95d4eb;">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5 text-center" style="font-weight: 900; font-size: 44px; color:white;">Testimonials</h1>
+        </div>
+
+        <div class="row">
+            <!-- First testimonial card -->
+            <div class="col-md-4 mb-4 offset-md-2">
+                <div class="card p-3" style="border-radius: 44px;">
+                    <div class="text-center" style="margin-right:320px; margin-bottom:10px;">
+                        <img src="/images/photo1.png" alt="Testimonial 1" class="rounded-circle  text-start " width="80"
+                            height="80">
+                        <h4 class="font-weight-bold text-start"
+                            style="color:#50B2EA;font-weight:900; margin-left:20px;font-size:20px; margin-top:10px;margin-bottom:-4px;">
+                            Laura.D</h4>
+                    </div>
+                    <div>
+                        <p style="margin-left:20px; margin-right:0px; font-weight:800; color:black; font-size:13px;">SAP
+                            supported and gave me guidance of the confidence to pursue my dreams of studying abroad in
+                            Italy.</p>
+                        <p
+                            style="margin-left:20px; margin-right:0px; font-weight:800; color:#50B2EA; margin-top:-10px;">
+                            Sapienza University of Rome (Italy) <br> Faculty of Architecture</p>
+                        <div class="text-start"
+                            style="color:gold; font-size:22px;  margin-bottom:10px; margin-left: 20px;">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second testimonial card -->
+            <div class="col-md-4 mb-4 ">
+                <div class="card p-3" style="border-radius: 44px;">
+                    <div class="text-center" style="margin-bottom:10px; margin-right:320px;">
+                        <img src="/images/photo1.png" alt="Testimonial 1" class="rounded-circle  text-start " width="80"
+                            height="80">
+                        <h4 class="font-weight-bold text-start"
+                            style="color:#50B2EA;font-weight:900; margin-left:20px;font-size:20px; margin-top:10px;margin-bottom:-4px;">
+                            Ali.B</h4>
+                    </div>
+                    <div>
+                        <p style="margin-left:20px; margin-right:0px; font-weight:800; color:black; font-size:13px;">
+                            Thanks to SAP, I am now enjoying a transformative educational experience in Germany.</p>
+                        <p
+                            style="margin-left:20px; margin-right:0px; font-weight:800; color:#50B2EA; margin-top:-10px;">
+                            Jacobs University (Germany) <br> Faculty of Engineering</p>
+                        <div class="text-start"
+                            style="color:gold; font-size:22px;  margin-bottom:10px; margin-left: 20px;">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third testimonial card -->
+            <div class="col-md-4 mb-4 offset-md-2">
+                <div class="card p-3" style="border-radius: 44px;">
+                    <div class="text-center" style="margin-right:320px; margin-bottom:10px;">
+                        <img src="/images/photo1.png" alt="Testimonial 1" class="rounded-circle  text-start " width="80"
+                            height="80">
+                        <h4 class="font-weight-bold text-start"
+                            style="color:#50B2EA;font-weight:900; margin-left:20px;font-size:20px; margin-top:10px;margin-bottom:-4px;">
+                            Lujain.M</h4>
+                    </div>
+                    <div>
+                        <p style="margin-left:20px; margin-right:0px; font-weight:800; color:black; font-size:13px;">
+                            Applying to universities through the SAP made the entire process seamless, which ultimately
+                            helped me secure admission
+                            to my dream university</p>
+                        <p
+                            style="margin-left:20px; margin-right:0px; font-weight:800; color:#50B2EA; margin-top:-10px;">
+                            Medipol
+                            University (Turkey) <br> Faculty of Medicine</p>
+                        <div class="text-start"
+                            style="color:gold; font-size:22px;  margin-bottom:10px; margin-left: 20px;">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" style="margin-top: 20px; margin-left: 140px;">
+                    <a href="https://www.google.com/search?q=sap+study+abroad+review&ei=bwikZNTYAo-Gxc8P2pa8mAc&oq=sap+study+abreview&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMggIIRCgARDDBDIICCEQoAEQwwQyCAghEKABEMMEOgoIABBHENYEELADOhMILhCKBRDHARDRAxDUAhCwAxBDOgYIABAHEB46CAgAEAgQBxAeOggIABAFEAcQHjoKCCEQoAEQwwQQCkoECEEYAFDYCVj9F2CSI2gCcAF4AIABiQGIAeIIkgEDMC45mAEAoAEBwAEByAEJ&sclient=gws-wiz-serp#lrd=0x14d34f1926e700a3:0xcb8e8efe8d51c26f,3,,,,"
+                        class="btn btn-primary no-rounded"
+                        style="margin-top: 10px; font-family: Mitr, Arial, sans-serif; font-weight: 600; font-size: 18px; display: block; margin-left: 220px; padding: 10px 14px;">
+                        Read More
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Fourth testimonial card -->
+            <div class="col-md-4 mb-4">
+                <div class="card p-3" style="border-radius: 44px;">
+                    <div class="text-center" style="margin-right:320px; margin-bottom:10px;">
+                        <img src="/images/photo1.png" alt="Testimonial 1" class="rounded-circle  text-start " width="80"
+                            height="80">
+                        <h4 class="font-weight-bold text-start"
+                            style="color:#50B2EA;font-weight:900; margin-left:20px;font-size:20px; margin-top:10px;margin-bottom:-4px;">
+                            John.D</h4>
+                    </div>
+                    <div>
+                        <p style="margin-left:20px; margin-right:0px; font-weight:800; color:black;font-size:13px;">I
+                            was able to make an informed decision and apply to the university that perfectly aligned
+                            with my personal aspirations
+                            through SAP's services.</p>
+                        <p
+                            style="margin-left:20px; margin-right:0px; font-weight:800; color:#50B2EA; margin-top:-10px;">
+                            Brown University (USA)
+                            <br> Faculty of Biostatistics
+                        </p>
+                        <div class="text-start"
+                            style="color:gold; font-size:22px;  margin-bottom:10px; margin-left: 20px;">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT US-->
+
+    <div class="container-fluid px-0">
+        <h2
+            style="display: flex; justify-content:center; align-items:center;font-weight:900; font-family: Mitr, Arial, sans-serif;  font-size: 44px; margin-left:120px; margin-top:30px; margin-bottom: 20px;">
+            About Us</h2>
+        <div class="row no-gutters mt-4">
+            <div class="col-md-4 px-0 mr-4 ">
+                <div class="rectangle5" style="background-color: #0032a0;">
+                    <h3
+                        style="margin-top: 92px; color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif; font-size: 49px;">
+                        8,000</h3>
+                    <p
+                        style="font-family: Mitr, Arial, sans-serif; color:white; font-weight: 700; display: flex; justify-content:center; align-items:center; margin-right: 90px;font-size: 23px;">
+                        International Students</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-0">
+                <div class="rectangle5" style="background-color: #0080bb;">
+                    <h3
+                        style="margin-top: 92px; color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif; font-size: 51px;">
+                        152</h3>
+                    <p
+                        style="font-family: Mitr, Arial, sans-serif; color:white; font-weight: 700; display: flex; justify-content:center; align-items:center; margin-right: 70px;font-size: 17px;">
+                        Countries Are Now Studying Abroad</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-0">
+                <div class="rectangle5" style="background-color: #0097dc;">
+                    <h3
+                        style=" color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif;font-size: 22px;  margin-left:80px; margin-top:70px; ">
+                        ST</h3>
+                    <h3
+                        style="margin-top: -20px; color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif; font-size: 59px;">
+                        1</h3>
+                    <p
+                        style="font-family: Mitr, Arial, sans-serif; color:white; font-weight: 700; display: flex; justify-content:center; align-items:center; margin-right: 70px;font-size: 17px;">
+                        Ranks in the Middle East and Europe</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center ">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row no-gutters mb-4">
+            <div class="col-md-4 px-0">
+                <div class="rectangle5" style="background-color: #0097dc; ">
+                    <h3
+                        style="margin-top: 92px; color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif; font-size: 49px;">
+                        3500</h3>
+                    <p
+                        style="font-family: Mitr, Arial, sans-serif; color:white; font-weight: 700; display: flex; justify-content:center; align-items:center; margin-right: 90px;font-size: 23px;">
+                        Students Consultation Every Year</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-0">
+                <div class="rectangle5" style="background-color: #0032a0;">
+                    <h3
+                        style="margin-top: 92px; color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif; font-size: 49px;">
+                        250</h3>
+                    <p
+                        style="font-family: Mitr, Arial, sans-serif; color:white; font-weight: 700; display: flex; justify-content:center; align-items:center; margin-right: 90px;font-size: 23px;">
+                        Different Scholarship Programs</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-0">
+                <div class="rectangle5" style="background-color: #0080bb;">
+                    <h3
+                        style="margin-top: 92px; color:white; font-weight: 900; font-family: Mitr, Arial, sans-serif; font-size: 49px;">
+                        2100</h3>
+                    <p
+                        style="font-family: Mitr, Arial, sans-serif; color:white; font-weight: 700; display: flex; justify-content:center; align-items:center; margin-right: 90px;font-size: 23px;">
+                        Universities Across The World</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="about-us">
+        <h1>About Us</h1>
+        <div class="about-us123">
+            <div class="about-us1">
+                <div class="about-is-img">
+                    <img src="images/1.png" alt="photo-1">
+                </div>
+                <div class="about-us-text">
+                    <p>SAP Study Abroad Platform for International Students<br>is the world’s leading study and internship
+                        abroad<br>platform for
+                        international students.</p>
+                </div>
+            </div>
+    
+    
+            <div class="about-us2">
+                <div class="about-is-img">
+                    <img src="images/2.png" alt="photo-2">
+                </div>
+                <div class="about-us-text">
+                    <p>More than 8,000 international students from more<br>than 152 countries are now studying abroad
+                        through<br>their apply in the
+                        SAP Platform.</p>
+                </div>
+            </div>
+    
+    
+            <div class="about-us3">
+                <div class="about-is-img">
+                    <img src="images/3.png" alt="photo-3">
+                </div>
+                <div class="about-us-text">
+                    <p>Applications to join and enroll universities and apply for Study,<br> Scholarships, Exchange
+                        Programs, Work, Internship,
+                        Internal<br>and External Training Programs are open throughout the year<br>through SAP Platform.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="about-us345">
+            <div class="about-us4">
+                <div class="about-is-img">
+                    <img src="images/4.png" alt="photo-4">
+                </div>
+                <div class="about-us-text">
+                    <p>The 1st ranks platform based on artificial intelligence<br>technologies an news for International
+                        Students to study<br>abroad
+                        specifically Middle East, North Africa, Europe &<br>North America region.</p>
+                </div>
+            </div>
+    
+    
+            <div class="about-us5">
+                <div class="about-is-img">
+                    <img src="images/5.png" alt="photo-5">
+                </div>
+                <div class="about-us-text">
+                    <p>SAP Study Abroad Platform for International<br>Students is officially linked and connected with
+                        the<br>Global University
+                        Systems group of companies<br>(the GUS Group).</p>
+                </div>
+            </div>
+    
+    
+            <div class="about-us6">
+                <div class="about-is-img">
+                    <img src="images/6.png" alt="photo-6">
+                </div>
+                <div class="about-us-text">
+                    <p>Study Abroad Platform for International Students.</p>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div> -->
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center" style="height: 100px;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <img src="images/logo.png" alt="photo-6" class="img-fluid me-3"
+                            style="max-width: 200px; max-height: 100px;">
+                        <div class="address">
+                            <p class="mb-0">
+                                The SAP | Study Abroad Platform Team
+                                <br> support@capitalempireco.com
+                                <br> The Paragon Tower, Ankara
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
